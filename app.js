@@ -51,7 +51,7 @@ Solve Exercise 4 here:
 */
 
 
-game.party.push(pokemon[3])
+game.party.push(pokemon[4])
 
 
 
@@ -200,7 +200,7 @@ game.catchPokemon = function (pokemonObj) {
 };
 
 console.log(game.items[1])
-console.log(game.catchPokemon(pokemon [1]));
+console.log(game.catchPokemon(pokemon [69]));
 console.log(game.items[1])
 
 
@@ -275,14 +275,47 @@ const gymTally =  {
 
 
 
-    
+ /*
+Exercise 14
+1. Add a `partyCount` method to `game` that counts the number of Pokémon in your party.
+
+This method should:
+  - Not accept any arguments.
+  - Count the number of Pokemon in the party.
+  - return the found number of Pokemon in the party.
+
+Solve Exercise 14 here:
+*/
+   
 
 
+let partyCount = 6;
+for (let i = 0; i < partyCount.length; i++) {
+    if (party[i].length === '0') partyCount++;
+}
+console.log(partyCount)
 
-
-
-
+ 
  
 
   
+/*
+Exercise 15
+1. Now, complete gyms with a difficulty below 8. Reflect on how this is similar to or different from the previous gym exercises.
+(change the value of `complete` in the qualifying objects from false to true).
 
+Solve Exercise 15 here:
+*/
+
+
+
+
+game.gyms.forEach(gyms => {
+    if (gyms.difficulty < 6)
+        gyms.completed = true;
+});
+    
+        
+
+
+console.log(game.gyms)

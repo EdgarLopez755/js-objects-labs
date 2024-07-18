@@ -288,12 +288,14 @@ Solve Exercise 14 here:
 */
    
 
+game.partyCount = function () {
+    return game.party.length;
 
-let partyCount = 6;
-for (let i = 0; i < partyCount.length; i++) {
-    if (party[i].length === '0') partyCount++;
-}
-console.log(partyCount)
+};
+
+console.log(game.party.length)
+
+
 
  
  
@@ -319,3 +321,16 @@ game.gyms.forEach(gyms => {
 
 
 console.log(game.gyms)
+
+
+
+
+/*
+Exercise 16
+1. Log the entire `game` object to the console. Take a moment to review the changes you've made throughout the exercises.
+
+
+Solve Exercise 16 here:
+*/
+
+console.log(game)
